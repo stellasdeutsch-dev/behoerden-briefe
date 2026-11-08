@@ -475,6 +475,71 @@ html.no-tts .say{display:none}
 @media (max-width:899px){.adh,.rr,.xg{grid-template-columns:1fr}.x3,.wh,.pc{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}.phs{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.st3{grid-template-columns:1fr}}
 @media (min-width:600px) and (max-width:899px){.x3,.wh{grid-template-columns:1fr 1fr}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/*vz*/
+.vz{margin-top:44px}
+.vz-note{margin-top:14px;font-size:14px;line-height:1.4;color:var(--ink2);text-align:center;text-wrap:pretty}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);transition:translate .25s,border-color .25s}
+.vcard:hover{translate:0 -3px;border-color:var(--b1)}
+.vcard svg{display:block}
+/* story strip */
+.st4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.st4 figure{margin:0;overflow:hidden}
+.st4 svg{width:100%;height:auto}
+.st4 figcaption{padding:12px 14px 14px;font-size:14px;line-height:1.35;text-wrap:pretty}
+@media (max-width:759px){.st4{grid-template-columns:1fr 1fr;gap:10px}.st4 figcaption{padding:10px 11px 12px;font-size:13px}}
+/* two calendar sheets */
+.cal2{display:grid;grid-template-columns:minmax(0,1fr) 170px minmax(0,1fr);align-items:start;max-width:980px;margin:0 auto}
+.cal{overflow:hidden}
+.cal-t{display:flex;align-items:center;justify-content:center;min-height:50px;background:var(--b2);color:#fff;font-family:var(--ser);font-size:22px;line-height:1;border-radius:13px 13px 0 0}
+.cal-g{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;padding:14px}
+.cal-g span,.cal-g i{display:grid;place-items:center;aspect-ratio:1;font-size:14px;line-height:1;font-style:normal;border-radius:10px;font-variant-numeric:tabular-nums}
+.cal-g .wd{aspect-ratio:auto;height:24px;font-size:12px;color:var(--mut)}
+.cal-g .k2{background:#D5E4EC;color:var(--b2)}
+.cal-g .k1{background:var(--ink);color:#fff}
+.cal-g .k3{background:var(--b2);color:#fff}
+.cal-g .k4{background:var(--red);color:#fff}
+.cal-c{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--b2);align-self:center}
+.cal-c svg{width:150px;height:auto}
+.cal-c .cv{display:none}
+.cal-c b{font-family:var(--ser);font-weight:400;font-size:22px;line-height:1.1;white-space:nowrap}
+.cal-l{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;margin-top:20px;font-size:14.5px;line-height:1.3}
+.cal-l span{display:inline-flex;align-items:center;gap:9px}
+.cal-l i{width:16px;height:16px;border-radius:5px;flex:none}
+.cal-l .a{background:var(--ink)}.cal-l .b{background:var(--b2)}.cal-l .c{background:var(--red)}
+@media (max-width:759px){.cal2{grid-template-columns:1fr;gap:6px;max-width:420px}.cal-c{flex-direction:row;justify-content:center;padding:4px 0}.cal-c .ch{display:none}.cal-c .cv{display:block;width:92px}.cal-g{padding:10px}.cal-l{flex-direction:column;align-items:center}}
+/* reading route */
+.rdw{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:40px;align-items:center;max-width:900px;margin:0 auto}
+.rdw .pg{overflow:hidden;padding:0}
+.rdw svg{width:100%;height:auto}
+.rds{display:grid;gap:12px}
+.rd{display:flex;align-items:center;gap:16px;padding:16px 18px}
+.rd>i{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;flex:none;color:#fff;font-style:normal;font-family:var(--ser);font-size:22px;line-height:1}
+.rd b{display:block;font-family:var(--ser);font-weight:400;font-size:clamp(19px,1.8vw,23px);line-height:1.15;margin-bottom:3px;hyphens:manual;-webkit-hyphens:manual}
+.rd span{display:block;font-size:14.5px;line-height:1.35;color:var(--ink2);text-wrap:pretty}
+@media (max-width:759px){.rdw{grid-template-columns:1fr;gap:20px}.rdw .pg{max-width:320px;margin:0 auto;width:100%}.rd{padding:14px;gap:12px}}
+/* from form to mailbox */
+.sp5{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px}
+.sp5 figure{margin:0;flex:1 1 170px;min-width:0;overflow:hidden}
+.sp5 svg{width:100%;height:auto}
+.sp5 figure:last-child svg{background:#EEF2EF}
+@media (max-width:1180px){.sp5 figure:last-child svg{height:170px}}
+.sp5 figcaption{display:flex;align-items:center;gap:10px;padding:12px 14px 14px;font-size:14px;line-height:1.3;text-wrap:pretty}
+.sp5 figcaption i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--b2);color:#fff;flex:none;font-style:normal;font-size:14px;line-height:1}
+@media (max-width:759px){.sp5 figure{flex:1 1 40%}.sp5 figcaption{padding:10px 10px 12px;font-size:13.5px}}
+/* channels to the office */
+.chn{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px;align-items:center}
+.chl{display:grid;gap:12px}
+.ch-r{display:grid;grid-template-columns:128px minmax(0,1fr) 40px;align-items:center;gap:14px;padding:8px 16px 8px 8px}
+.ch-r svg{width:100%;height:auto}
+.ch-r b{display:block;font-size:15.5px;font-weight:600;line-height:1.25}
+.ch-r span{display:block;font-size:14px;line-height:1.35;color:var(--ink2);text-wrap:pretty}
+.ch-m{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;color:#fff;font-size:20px;flex:none}
+.ch-m.yes{background:var(--g2)}.ch-m.no{background:var(--red)}.ch-m.mb{background:var(--mut)}
+.chb{overflow:hidden;padding:0}
+.chb svg{width:100%;height:auto}
+@media (max-width:899px){.chn{grid-template-columns:1fr}.chb{max-width:320px;margin:0 auto;order:-1;width:100%}}
+@media (max-width:480px){.ch-r{grid-template-columns:74px minmax(0,1fr) 34px;gap:10px;padding:6px 10px 6px 6px}.ch-m{width:34px;height:34px;font-size:17px}}
+/*/vz*/
 </style>
 
 </head>
@@ -614,6 +679,41 @@ html.no-tts .say{display:none}
     </div>
     <div class="whyV"><div class="lmp" id="lmp"><img src="media/o-lamp.webp" alt="" width="620" height="1518" loading="lazy"></div><img class="chr" src="media/o-chairset.webp" alt="" width="620" height="503" loading="lazy"><img class="pl" src="media/o-plant.webp" alt="" width="620" height="611" loading="lazy"></div>
   </div>
+<!--vz-->
+  <div class="wrap vz">
+    <div class="st4" id="vzStory">
+      <figure class="vcard"><svg viewBox="0 0 260 190" role="img" aria-label="Письмо торчит из почтового ящика">
+        <rect width="260" height="190" fill="#EEF2EF"/><rect y="162" width="260" height="28" fill="#DCE5D6"/>
+        <rect x="122" y="108" width="16" height="58" rx="2" fill="#8A919C"/>
+        <g class="vz-e"><rect x="102" y="36" width="56" height="40" rx="3" fill="#fff" stroke="#2A3345" stroke-width="2"/><path d="M102 38l28.0 20 28.0 -20" fill="none" stroke="#2A3345" stroke-width="2"/></g>
+        <path d="M62 112V84a30 30 0 0 1 30-30h76a30 30 0 0 1 30 30v28z" fill="#2D8EB7"/>
+        <path d="M84 72h92" stroke="#196B8D" stroke-width="6" stroke-linecap="round"/>
+        <path d="M198 92V44l26 10-26 10" fill="#C9302A"/>
+      </svg><figcaption>В&nbsp;ящике лежало письмо</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 260 190" role="img" aria-label="Письмо под магнитом на холодильнике, рядом три листка календаря">
+        <rect width="260" height="190" fill="#EEF2EF"/><rect y="168" width="260" height="22" fill="#DCE5D6"/>
+        <rect x="100" y="16" width="112" height="152" rx="10" fill="#fff" stroke="#C9CDD4" stroke-width="2"/>
+        <path d="M100 64h112" stroke="#C9CDD4" stroke-width="2"/>
+        <rect x="192" y="34" width="7" height="22" rx="3" fill="#8A919C"/><rect x="192" y="76" width="7" height="42" rx="3" fill="#8A919C"/>
+        <g class="vz-f"><rect x="118" y="82" width="62" height="46" rx="3" fill="#fff" stroke="#2A3345" stroke-width="2"/><path d="M118 84l31.0 23 31.0 -23" fill="none" stroke="#2A3345" stroke-width="2"/><circle cx="149" cy="86" r="8" fill="#C9302A"/></g>
+        <g class="vz-c"><rect x="32" y="30" width="46" height="52" rx="4" fill="#fff" stroke="#C9CDD4" stroke-width="2"/><rect x="32" y="30" width="46" height="13" fill="#196B8D"/><rect x="32" y="30" width="46" height="13" rx="4" fill="#196B8D"/><path d="M41 54h28M41 64h28M41 74h28" stroke="#C9302A" stroke-width="4" stroke-linecap="round"/></g>
+      </svg><figcaption>На холодильнике три недели</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 260 190" role="img" aria-label="Второе письмо, красное, падает на первое">
+        <rect width="260" height="190" fill="#EEF2EF"/><rect y="150" width="260" height="40" fill="#DCE5D6"/>
+        <rect x="40" y="126" width="180" height="24" rx="4" fill="#fff" stroke="#C9CDD4" stroke-width="2"/>
+        <g><rect x="78" y="92" width="86" height="34" rx="3" fill="#fff" stroke="#2A3345" stroke-width="2"/><path d="M78 94l43.0 17 43.0 -17" fill="none" stroke="#2A3345" stroke-width="2"/></g>
+        <g class="vz-e2"><rect x="82" y="34" width="96" height="52" rx="3" fill="#C9302A" stroke="#fff" stroke-width="2"/><path d="M82 36l48.0 26 48.0 -26" fill="none" stroke="#fff" stroke-width="2"/><path d="M126 12v12M108 16l4 10M144 16l-4 10" stroke="#C9302A" stroke-width="4" stroke-linecap="round"/></g>
+      </svg><figcaption>Потом пришло второе</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 260 190" role="img" aria-label="Телефон звонит, рядом зачёркнутая дата в календаре">
+        <rect width="260" height="190" fill="#EEF2EF"/><rect y="162" width="260" height="28" fill="#DCE5D6"/>
+        <rect x="150" y="42" width="72" height="88" rx="6" fill="#fff" stroke="#C9CDD4" stroke-width="2"/><rect x="150" y="42" width="72" height="20" rx="4" fill="#196B8D"/>
+        <path class="vz-x" pathLength="1" d="M168 80l36 36M204 80l-36 36" stroke="#C9302A" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <g class="vz-p" style="transform-origin:82px 92px"><path d="M56 62c-8 6-10 24 2 44 10 18 26 30 38 30 6 0 12-6 14-12 1-3 0-5-3-7l-16-9c-2-1-5-1-7 1l-6 7c-8-5-16-15-20-24l8-6c2-2 3-4 2-7l-6-17c-1-3-4-3-6 0z" fill="#2A3345"/></g>
+        <g fill="none" stroke="#2D8EB7" stroke-width="5" stroke-linecap="round"><path class="vz-w1" d="M98 56c8 3 14 9 16 17"/><path class="vz-w2" d="M104 38c14 5 26 16 30 32"/></g>
+      </svg><figcaption>Звонит сотрудница. Срок закончился</figcaption></figure>
+    </div>
+  </div>
+<!--/vz-->
 </section>
 
 <!-- FRIST CALC -->
@@ -639,6 +739,17 @@ html.no-tts .say{display:none}
       <a class="btn" href="#letter">Разобрать письмо дальше</a>
     </div>
   </div>
+<!--vz-->
+  <div class="wrap vz">
+    <div class="cal2" id="vzCal">
+      <div class="cal vcard"><div class="cal-t">Ноябрь</div><div class="cal-g"><span class="wd">Пн</span><span class="wd">Вт</span><span class="wd">Ср</span><span class="wd">Чт</span><span class="wd">Пт</span><span class="wd">Сб</span><span class="wd">Вс</span><i></i><i></i><i></i><i></i><i></i><i></i><span>1</span><span>2</span><span class="k1">3</span><span class="k2">4</span><span class="k2">5</span><span class="k2">6</span><span class="k3">7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span></div></div>
+      <div class="cal-c" aria-hidden="true"><svg class="ch" viewBox="0 0 150 150"><path id="vzArc" d="M6 124C30 40 112 34 144 108" fill="none" stroke="#2D8EB7" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/><path d="M144 108l-11-6 2 13z" fill="#2D8EB7"/><g id="vzFly"><rect x="52" y="26" width="46" height="32" rx="3" fill="#fff" stroke="#196B8D" stroke-width="2"/><path d="M52 28l23.0 16 23.0 -16" fill="none" stroke="#196B8D" stroke-width="2"/></g></svg><svg class="cv" viewBox="0 0 92 92"><path d="M46 8V70" stroke="#2D8EB7" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round" fill="none"/><path d="M46 84l-9-14h18z" fill="#2D8EB7"/></svg><b>1 месяц</b></div>
+      <div class="cal vcard"><div class="cal-t">Декабрь</div><div class="cal-g"><span class="wd">Пн</span><span class="wd">Вт</span><span class="wd">Ср</span><span class="wd">Чт</span><span class="wd">Пт</span><span class="wd">Сб</span><span class="wd">Вс</span><i></i><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="k4">7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span></div></div>
+    </div>
+    <div class="cal-l"><span><i class="a"></i><b>3 ноября</b> дата на письме</span><span><i class="b"></i><b>7 ноября</b> считается полученным</span><span><i class="c"></i><b>7 декабря</b> последний день, Widerspruch</span></div>
+    <p class="vz-note">Пример для письма от ведомства в Германии с датой 3 ноября. Точный срок считай на своё письмо.</p>
+  </div>
+<!--/vz-->
 </section>
 
 <!-- LETTER -->
@@ -669,6 +780,28 @@ html.no-tts .say{display:none}
       </div>
     </div>
   </div>
+<!--vz-->
+  <div class="wrap vz">
+    <div class="rdw" id="vzRead">
+      <div class="pg vcard"><svg viewBox="0 0 340 440" role="img" aria-label="Лист письма. Три строки выделены: Betreff, Tenor, Rechtsbehelfsbelehrung. Лупа читает их по очереди">
+        <rect width="340" height="440" fill="#fff"/>
+        <g fill="#E6E6E1"><rect x="28" y="28" width="130" height="10" rx="5"/><rect x="28" y="48" width="200" height="7" rx="3.500"/><rect x="28" y="62" width="92" height="7" rx="3.500"/><rect x="230" y="96" width="82" height="7" rx="3.500"/><rect x="28" y="96" width="118" height="7" rx="3.500"/></g>
+        <rect x="20" y="118" width="300" height="44" rx="8" fill="#D5E4EC"/><rect x="34" y="136" width="210" height="9" rx="4.500" fill="#196B8D"/>
+        <rect x="28" y="178" width="128" height="7" rx="3.500" fill="#E6E6E1"/>
+        <rect x="20" y="196" width="300" height="44" rx="8" fill="#DCE5D6"/><rect x="34" y="214" width="252" height="9" rx="4.500" fill="#4D7A45"/>
+        <g fill="#E6E6E1"><rect x="28" y="256" width="284" height="7" rx="3.500"/><rect x="28" y="270" width="210" height="7" rx="3.500"/></g>
+        <rect x="20" y="288" width="300" height="84" rx="8" fill="#F6DAD8"/><g fill="#C9302A"><rect x="34" y="304" width="272" height="9" rx="4.500"/><rect x="34" y="324" width="240" height="9" rx="4.500"/><rect x="34" y="344" width="170" height="9" rx="4.500"/></g>
+        <g fill="#E6E6E1"><rect x="28" y="388" width="112" height="7" rx="3.500"/><rect x="28" y="402" width="76" height="7" rx="3.500"/></g>
+        <g id="vzLoupe"><circle cx="262" cy="330" r="44" fill="#fff" fill-opacity=".35" stroke="#2A3345" stroke-width="7"/><path d="M294 362l28 30" stroke="#2A3345" stroke-width="11" stroke-linecap="round"/></g>
+      </svg></div>
+      <div class="rds">
+        <div class="rd vcard"><i style="background:var(--b2)">1</i><div><b lang="de">Betreff</b><span>Одна строка. Читаешь её первой</span></div></div>
+        <div class="rd vcard"><i style="background:var(--g2)">2</i><div><b lang="de">Tenor</b><span>Самое главное. Ищи <span style="display:inline" lang="de">bewilligt</span> и <span style="display:inline" lang="de">abgelehnt</span></span></div></div>
+        <div class="rd vcard"><i style="background:var(--red)">3</i><div><b lang="de">Rechtsbehelfs&shy;belehrung</b><span>Что подавать, куда и за какое время</span></div></div>
+      </div>
+    </div>
+  </div>
+<!--/vz-->
 </section>
 
 <!-- REPLY -->
@@ -701,6 +834,44 @@ html.no-tts .say{display:none}
         <small id="cpN">Поля остаются у тебя в браузере. Мы ничего не получаем и не сохраняем.</small>
       </div>
     </div>
+<!--vz-->
+    <div class="sp5" id="vzSteps">
+      <figure class="vcard"><svg viewBox="0 0 220 150" role="img" aria-label="Ноутбук с полями формы">
+        <rect width="220" height="150" fill="#EEF2EF"/>
+        <rect x="46" y="28" width="128" height="84" rx="6" fill="#fff" stroke="#2A3345" stroke-width="3"/>
+        <path d="M30 112h160l8 14H22z" fill="#2A3345"/>
+        <g fill="#D5E4EC"><rect x="58" y="42" width="104" height="14" rx="4"/><rect x="58" y="62" width="104" height="14" rx="4"/><rect x="58" y="82" width="70" height="14" rx="4"/></g>
+        <g fill="#196B8D"><rect x="64" y="47" width="56" height="4" rx="2"/><rect x="64" y="67" width="36" height="4" rx="2"/></g>
+        <rect class="vz-cur" x="132" y="83" width="3" height="12" fill="#C9302A"/>
+      </svg><figcaption><i>1</i>Заполни поля</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 220 150" role="img" aria-label="Два листа, один копия другого">
+        <rect width="220" height="150" fill="#EEF2EF"/>
+        <g class="vz-s1"><rect x="54" y="30" width="80" height="100" rx="5" fill="#fff" stroke="#2A3345" stroke-width="3"/><path d="M66 50h56M66 64h56M66 78h38" stroke="#C9CDD4" stroke-width="5" stroke-linecap="round"/></g>
+        <g class="vz-s2"><rect x="92" y="22" width="80" height="100" rx="5" fill="#fff" stroke="#196B8D" stroke-width="3"/><path d="M104 42h56M104 56h56M104 70h38" stroke="#2D8EB7" stroke-width="5" stroke-linecap="round"/></g>
+      </svg><figcaption><i>2</i>Скопируй</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 220 150" role="img" aria-label="Принтер печатает лист">
+        <rect width="220" height="150" fill="#EEF2EF"/>
+        <g class="vz-pap"><rect x="72" y="40" width="76" height="84" rx="3" fill="#fff" stroke="#2A3345" stroke-width="3"/><path d="M84 92h52M84 104h52M84 80h52" stroke="#C9CDD4" stroke-width="4" stroke-linecap="round"/></g>
+        <rect x="44" y="20" width="132" height="62" rx="9" fill="#2A3345"/>
+        <rect x="60" y="62" width="100" height="8" rx="4" fill="#0F1420"/>
+        <circle cx="154" cy="38" r="7" fill="#7CA875"/>
+      </svg><figcaption><i>3</i>Распечатай</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 220 150" role="img" aria-label="Подпись ручкой внизу листа">
+        <rect width="220" height="150" fill="#EEF2EF"/>
+        <rect x="46" y="16" width="128" height="122" rx="4" fill="#fff" stroke="#2A3345" stroke-width="3"/>
+        <path d="M60 36h100M60 50h100M60 64h70" stroke="#C9CDD4" stroke-width="5" stroke-linecap="round"/>
+        <path id="vzSign" pathLength="1" d="M62 112c8-16 16-30 22-24s-8 28 0 28 14-24 22-20-6 22 4 20 10-14 18-12 0 12 14 10" fill="none" stroke="#196B8D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="vzPen" style="transform-origin:0 0"><path d="M142 112l10-28 28-30 12 11-30 28z" fill="#2A3345"/><path d="M142 112l10-28 12 11z" fill="#C9302A"/></g>
+      </svg><figcaption><i>4</i>Подпиши</figcaption></figure>
+      <figure class="vcard"><svg viewBox="0 0 220 150" role="img" aria-label="Папка с копией письма и подтверждением отправки">
+        <rect width="220" height="150" fill="#EEF2EF"/>
+        <path d="M32 44h54l12 14h90v72H32z" fill="#DCE5D6" stroke="#4D7A45" stroke-width="3" stroke-linejoin="round"/>
+        <g class="vz-rc"><rect x="96" y="24" width="72" height="84" rx="4" fill="#fff" stroke="#2A3345" stroke-width="3"/><path d="M108 44h48M108 56h48M108 68h30" stroke="#C9CDD4" stroke-width="4" stroke-linecap="round"/></g>
+        <path d="M32 72h156v58H32z" fill="#7CA875"/>
+        <circle cx="74" cy="102" r="16" fill="#fff"/><path d="m66 102 6 6 11-12" fill="none" stroke="#4D7A45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg><figcaption><i>5</i>Сохрани копию и подтверждение отправки</figcaption></figure>
+    </div>
+<!--/vz-->
     <div class="hdc" style="margin-top:76px;margin-bottom:0"><h2 class="h2">Девять фраз, которые <span class="scr">работают</span></h2></div>
     <div class="svc" id="svc"></div>
   </div>
@@ -718,6 +889,28 @@ html.no-tts .say{display:none}
       <div class="e"><span class="nb">05</span><svg class="ic"><use href="#i-at"/></svg><span class="bad">Простой e-mail</span><b class="good">Письмо с подписью</b><p>Обычный e-mail чаще всего не заменяет письменную форму.</p><a class="law" href="https://www.gesetze-im-internet.de/vwvfg/__3a.html" target="_blank" rel="noopener">§ 3a VwVfG</a></div>
     </div>
   </div>
+<!--vz-->
+  <div class="wrap vz">
+    <div class="chn" id="vzCh">
+      <div class="chl">
+        <div class="ch-r vcard"><svg viewBox="0 0 128 84" role="img" aria-label="Телефонная трубка и звуковые волны"><rect width="128" height="84" rx="8" fill="#EEF2EF"/><path d="M46 16c-6 5-8 18 1 33 8 13 20 23 29 23 5 0 9-4 11-9 1-2 0-4-2-5l-13-7c-2-1-4-1-5 1l-4 5c-6-3-12-11-15-18l6-5c2-1 2-3 2-5l-5-13c-1-2-3-3-5 0z" fill="#2A3345"/><g fill="none" stroke="#2D8EB7" stroke-width="4" stroke-linecap="round"><path d="M84 20c6 2 10 6 12 12"/><path d="M90 8c10 3 19 11 22 23"/></g></svg><div><b>Позвонить</b><span>Звонок срок не останавливает</span></div><i class="ch-m no"><svg class="ic"><use href="#i-x"/></svg></i></div>
+        <div class="ch-r vcard"><svg viewBox="0 0 128 84" role="img" aria-label="Экран с простым электронным письмом"><rect width="128" height="84" rx="8" fill="#EEF2EF"/><rect x="22" y="14" width="84" height="54" rx="5" fill="#fff" stroke="#2A3345" stroke-width="3"/><path d="M22 18l42 26 42-26" fill="none" stroke="#2A3345" stroke-width="3"/><path d="M50 74h28" stroke="#2A3345" stroke-width="5" stroke-linecap="round"/></svg><div><b>Простой e-mail</b><span>Чаще всего не заменяет письменную форму</span></div><i class="ch-m mb"><svg class="ic"><use href="#i-x"/></svg></i></div>
+        <div class="ch-r vcard"><svg viewBox="0 0 128 84" role="img" aria-label="Лист с подписью"><rect width="128" height="84" rx="8" fill="#EEF2EF"/><rect x="36" y="8" width="56" height="68" rx="4" fill="#fff" stroke="#2A3345" stroke-width="3"/><path d="M45 22h38M45 32h38" stroke="#C9CDD4" stroke-width="4" stroke-linecap="round"/><path d="M45 60c5-9 10-16 13-12s-5 16 0 15 8-12 13-10-3 11 3 10 5-6 11-5" fill="none" stroke="#196B8D" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Письмо с подписью</b><span>Письменная форма</span></div><i class="ch-m yes"><svg class="ic"><use href="#i-check"/></svg></i></div>
+        <div class="ch-r vcard"><svg viewBox="0 0 128 84" role="img" aria-label="Окно приёма в ведомстве"><rect width="128" height="84" rx="8" fill="#EEF2EF"/><rect x="20" y="10" width="88" height="46" rx="4" fill="#fff" stroke="#2A3345" stroke-width="3"/><circle cx="64" cy="26" r="9" fill="#7CA875"/><path d="M46 56c2-12 10-18 18-18s16 6 18 18z" fill="#7CA875"/><rect x="12" y="56" width="104" height="14" rx="3" fill="#2A3345"/></svg><div><b>В ведомстве</b><span>Записывают на месте</span></div><i class="ch-m yes"><svg class="ic"><use href="#i-check"/></svg></i></div>
+      </div>
+      <div class="chb vcard"><svg viewBox="0 0 300 330" role="img" aria-label="Здание ведомства с почтовой щелью у двери">
+        <rect width="300" height="330" fill="#EEF2EF"/>
+        <path d="M150 30 276 96H24z" fill="#196B8D"/>
+        <rect x="42" y="96" width="216" height="172" fill="#fff" stroke="#C9CDD4" stroke-width="2"/>
+        <g fill="#D5E4EC"><rect x="62" y="116" width="42" height="56" rx="3"/><rect x="196" y="116" width="42" height="56" rx="3"/><rect x="62" y="190" width="42" height="56" rx="3"/><rect x="196" y="190" width="42" height="56" rx="3"/></g>
+        <rect x="124" y="170" width="52" height="98" rx="4" fill="#2A3345"/><circle cx="165" cy="222" r="3.500" fill="#fff"/><rect x="134" y="196" width="32" height="6" rx="3" fill="#fff"/>
+        <path d="M24 268h252v16H24zM8 284h284v18H8z" fill="#C9CDD4"/>
+        <path d="M150 30V6" stroke="#2A3345" stroke-width="3"/><path d="M150 6l32 8-32 8z" fill="#C9302A"/>
+        <g id="vzPost"><rect x="128" y="128" width="44" height="32" rx="3" fill="#fff" stroke="#2A3345" stroke-width="2"/><path d="M128 130l22.0 16 22.0 -16" fill="none" stroke="#2A3345" stroke-width="2"/></g>
+      </svg></div>
+    </div>
+  </div>
+<!--/vz-->
 </section>
 
 <!-- RULES -->
@@ -1067,6 +1260,21 @@ function xInit(){
   $$('.phs .ph').forEach(function(p,i){G.fromTo(p,{y:50+i*22},{y:-14,ease:'none',scrollTrigger:{trigger:'.phs',start:'top bottom',end:'bottom top',scrub:.6}});});
   G.from('#mL .mi',{y:-40,rotation:-3,duration:.6,ease:'bounce.out',stagger:.16,scrollTrigger:{trigger:'#mist',start:'top 80%',once:true}});
   G.from('.prc',{y:50,scale:.94,duration:.7,ease:'back.out(1.6)',stagger:.1,scrollTrigger:{trigger:'#prices',start:'top 88%',once:true}});
+/*vz*/
+  /* topic visuals: transforms only, final state is the markup */
+  (function(){
+    var T=function(el,fn){if(el)ScrollTrigger.create({trigger:el,start:'top 82%',once:true,onEnter:fn});};
+    G.from('#vzStory figure',{y:34,duration:.7,ease:'power3.out',stagger:.1,scrollTrigger:{trigger:'#vzStory',start:'top 86%',once:true}});
+    T($('#vzStory'),function(){G.from('.vz-e',{y:-46,duration:.8,ease:'bounce.out',delay:.3});G.from('.vz-f',{y:-40,rotation:-9,transformOrigin:'50% 0%',duration:.8,ease:'back.out(2)',delay:.5});G.from('.vz-e2',{y:-70,duration:.9,ease:'bounce.out',delay:.8});G.from('.vz-w1,.vz-w2',{scale:.4,transformOrigin:'0% 100%',duration:.6,stagger:.12,ease:'back.out(3)',delay:1});G.fromTo('.vz-p',{rotation:-7},{rotation:7,duration:.1,yoyo:true,repeat:9,ease:'sine.inOut',delay:1,onComplete:function(){G.set('.vz-p',{rotation:0});}});});
+    G.from('#vzCal .cal-g span',{scale:.72,duration:.3,ease:'power2.out',stagger:.012,scrollTrigger:{trigger:'#vzCal',start:'top 84%',once:true}});
+    var fly=$('#vzFly'),arc=$('#vzArc');if(fly&&arc&&window.MotionPathPlugin){G.from(fly,{motionPath:{path:arc,align:arc,alignOrigin:[.5,.5]},duration:1.4,ease:'power2.inOut',immediateRender:false,scrollTrigger:{trigger:'#vzCal',start:'top 70%',once:true}});}
+    var lp=$('#vzLoupe');if(lp){G.timeline({scrollTrigger:{trigger:'#vzRead',start:'top 74%',once:true}}).from(lp,{x:-120,y:-200,duration:.8,ease:'power2.inOut'}).to(lp,{x:0,y:-106,duration:.01},'+=.25').from(lp,{x:-14,y:-188,duration:.7,ease:'power2.inOut'}).to(lp,{x:0,y:0,duration:.8,ease:'power2.inOut'},'+=.25');G.from('#vzRead .rd',{y:26,duration:.6,ease:'power2.out',stagger:.14,scrollTrigger:{trigger:'#vzRead',start:'top 78%',once:true}});}
+    G.from('#vzSteps figure',{y:30,duration:.6,ease:'power3.out',stagger:.09,scrollTrigger:{trigger:'#vzSteps',start:'top 86%',once:true}});
+    T($('#vzSteps'),function(){G.from('.vz-s2',{x:-38,y:8,duration:.7,ease:'back.out(2)',delay:.25});G.from('.vz-pap',{y:-46,duration:1,ease:'power2.out',delay:.5});G.from('.vz-rc',{y:30,duration:.7,ease:'back.out(2)',delay:.8});G.fromTo('.vz-cur',{scaleY:1},{scaleY:.1,transformOrigin:'50% 50%',duration:.2,yoyo:true,repeat:5,delay:.4,onComplete:function(){G.set('.vz-cur',{scaleY:1});}});var s=$('#vzSign');if(s){s.style.strokeDasharray='1';G.fromTo(s,{strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,ease:'power1.inOut',delay:.7});G.from('#vzPen',{x:-70,y:22,duration:1.1,ease:'power1.inOut',delay:.7});}});
+    G.from('#vzCh .ch-r',{y:24,duration:.55,ease:'power2.out',stagger:.1,scrollTrigger:{trigger:'#vzCh',start:'top 84%',once:true}});
+    G.from('#vzPost',{x:-150,y:60,rotation:-14,transformOrigin:'50% 50%',duration:.9,ease:'power2.inOut',scrollTrigger:{trigger:'.chb',start:'top 76%',once:true}});
+  })();
+/*/vz*/
   function refresh(){ScrollTrigger.refresh();}addEventListener('load',refresh);
 }
 document.addEventListener('DOMContentLoaded',xInit);
