@@ -540,6 +540,15 @@ html.no-tts .say{display:none}
 @media (max-width:899px){.chn{grid-template-columns:1fr}.chb{max-width:320px;margin:0 auto;order:-1;width:100%}}
 @media (max-width:480px){.ch-r{grid-template-columns:74px minmax(0,1fr) 34px;gap:10px;padding:6px 10px 6px 6px}.ch-m{width:34px;height:34px;font-size:17px}}
 /*/vz*/
+
+/* portrait block */
+.pt{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:30px 64px;align-items:center;margin-top:76px}
+.pt-i{position:relative;max-width:440px;width:100%;justify-self:center}
+.pt-l{position:absolute;right:-16%;top:6%;width:72%;opacity:.55;rotate:-90deg}
+.pt-p{position:relative;width:100%;height:auto}
+.pt-b{position:absolute;left:0;bottom:26px;display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:0 18px;background:#fff;border-radius:7px;font-size:14px;font-weight:600;color:var(--ink);box-shadow:0 12px 30px rgba(42,51,69,.13)}
+.pt-b .ic{color:var(--g2)}
+@media (max-width:899px){.pt{grid-template-columns:1fr;margin-top:52px}.pt-t{text-align:center}.pt-t .bul{display:inline-block;text-align:left}}
 </style>
 
 </head>
@@ -677,7 +686,7 @@ html.no-tts .say{display:none}
         <li><span><b>Молчание</b> ведомство не считает возражением</span></li>
       </ul>
     </div>
-    <div class="whyV"><div class="lmp" id="lmp"><img src="media/o-lamp.webp" alt="" width="620" height="1518" loading="lazy"></div><img class="chr" src="media/o-chairset.webp" alt="" width="620" height="503" loading="lazy"><img class="pl" src="media/o-plant.webp" alt="" width="620" height="611" loading="lazy"></div>
+    <div class="whyV"><div class="lmp" id="lmp"><img src="media/o-lamp.webp" alt="" width="620" height="1518" loading="lazy"></div><img class="chr" src="media/ph-chair.webp" alt="" width="693" height="662" loading="lazy"><img class="pl" src="media/o-plant.webp" alt="" width="620" height="611" loading="lazy"></div>
   </div>
 <!--vz-->
   <div class="wrap vz">
@@ -977,7 +986,17 @@ html.no-tts .say{display:none}
       </svg></div>
     </div>
     <p class="fine">Гайд объясняет язык и базовые правила. Он не заменяет консультацию. Если речь о деньгах, виде на жительство или суде, покажи письмо в Beratungsstelle или адвокату.</p>
-    <p class="punch rv">Письмо не страшное. Страшный <span lang="de">холодильник.</span></p>
+    <div class="pt rv">
+      <div class="pt-i"><img class="pt-l" src="media/o-fronds-blur.webp" alt="" width="520" height="452" loading="lazy"><img class="pt-p" src="media/ph-portrait.webp" alt="" width="611" height="719" loading="lazy"><span class="pt-b"><svg class="ic"><use href="#i-check"/></svg>Срок посчитан</span></div>
+      <div class="pt-t">
+        <h2 class="h2">Страшнее письма только <span class="scr">письмо на холодильнике</span></h2>
+        <ul class="bul">
+          <li><span><b>Открой конверт</b> в день, когда он пришёл</span></li>
+          <li><span><b>Посчитай срок</b> и запиши дату</span></li>
+        </ul>
+        <a class="btn" href="#platform">Посмотреть платформу</a>
+      </div>
+    </div>
   </div>
 </section>
 
