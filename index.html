@@ -549,6 +549,19 @@ html.no-tts .say{display:none}
 .pt-b{position:absolute;left:0;bottom:26px;display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:0 18px;background:#fff;border-radius:7px;font-size:14px;font-weight:600;color:var(--ink);box-shadow:0 12px 30px rgba(42,51,69,.13)}
 .pt-b .ic{color:var(--g2)}
 @media (max-width:899px){.pt{grid-template-columns:1fr;margin-top:52px}.pt-t{text-align:center}.pt-t .bul{display:inline-block;text-align:left}}
+/*ret*/
+.ret-loop{max-width:38em;margin:30px auto;padding:0 var(--gut);text-align:center;font-size:clamp(17px,1.5vw,20px);line-height:1.45;color:var(--ink);text-wrap:pretty}
+.ret-loop b{font-weight:600;color:var(--b2)}
+.ret-cw{margin-block:26px}
+.ret-cp{background:var(--bg);border-radius:var(--r);padding:clamp(18px,2vw,26px) clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(220px,.42fr) 1fr;gap:12px 36px;align-items:center}
+.ret-cp-l b{display:block;font:400 clamp(25px,2.4vw,32px)/1.1 var(--ser);color:var(--ink);letter-spacing:.012em}
+.ret-cp-b{display:block;height:8px;border-radius:4px;background:var(--line);margin-top:12px;overflow:hidden}
+.ret-cp-b i{display:block;height:100%;width:var(--p);border-radius:4px;background:var(--g2)}
+.ret-cp p{margin:0;font-size:15.5px;line-height:1.5;color:var(--ink2);text-wrap:pretty}
+.ret-nb{white-space:nowrap}
+.ret-why{margin:0 0 22px;font-size:15px;line-height:1.5;color:var(--ink2);text-wrap:pretty}
+@media (max-width:759px){.ret-cp{grid-template-columns:1fr}}
+/*/ret*/
 </style>
 
 </head>
@@ -627,6 +640,8 @@ html.no-tts .say{display:none}
     <div><b><svg class="ic"><use href="#i-shield"/></svg>2 недели</b><span>на ответ по Mahnbescheid</span><a class="law" href="https://www.gesetze-im-internet.de/zpo/__692.html" target="_blank" rel="noopener">§ 692 ZPO</a></div>
   </div>
 </section>
+
+<p class="ret-loop">Срок пропущен <span class="ret-nb">из-за</span> болезни. Конец истории? Есть одно длинное немецкое слово, которое иногда возвращает срок. <b>Какое, скажу в конце.</b></p>
 
 <!-- STORY -->
 <section class="roomP" id="story">
@@ -762,6 +777,8 @@ html.no-tts .say{display:none}
 </section>
 
 <!-- LETTER -->
+<div class="wrap ret-cw"><div class="ret-cp"><div class="ret-cp-l"><b>Треть позади</b><span class="ret-cp-b" style="--p:35%"><i></i></span></div><p>Из <span class="n">12 минут</span> осталось около восьми. Дальше сам <span lang="de">Bescheid</span>: шесть частей, важных три.</p></div></div>
+
 <section class="sec soft" id="letter">
   <div class="wrap">
     <div class="hdc"><h2 class="h2">Как устроен <span class="scr">Bescheid</span></h2><p class="lede" style="margin-top:12px">Шесть частей. Важных три. Нажимай по порядку.</p></div>
@@ -923,6 +940,8 @@ html.no-tts .say{display:none}
 </section>
 
 <!-- RULES -->
+<div class="wrap ret-cw"><div class="ret-cp"><div class="ret-cp-l"><b>Две трети позади</b><span class="ret-cp-b" style="--p:69%"><i></i></span></div><p>Осталось меньше четырёх минут. Дальше случаи, когда <span lang="de">Widerspruch</span> не подходит: <span lang="de">Finanzamt</span>, суд, Австрия. И то самое длинное слово.</p></div></div>
+
 <section class="sec soft" id="rules">
   <img class="leaf parx" data-y="60" src="media/o-fronds-blur.webp" alt="" width="520" height="452" style="left:-60px;bottom:40px;width:340px;opacity:.5;rotate:90deg">
   <div class="wrap">
@@ -989,11 +1008,12 @@ html.no-tts .say{display:none}
     <div class="pt rv">
       <div class="pt-i"><img class="pt-l" src="media/o-fronds-blur.webp" alt="" width="520" height="452" loading="lazy"><img class="pt-p" src="media/ph-portrait.webp" alt="" width="611" height="719" loading="lazy"><span class="pt-b"><svg class="ic"><use href="#i-check"/></svg>Срок посчитан</span></div>
       <div class="pt-t">
-        <h2 class="h2">Страшнее письма только <span class="scr">письмо на холодильнике</span></h2>
+        <h2 class="h2">Срок пропущен <span class="ret-nb">из-за</span> болезни? Есть <span class="scr" lang="de">Wiedereinsetzung</span></h2>
         <ul class="bul">
-          <li><span><b>Открой конверт</b> в день, когда он пришёл</span></li>
-          <li><span><b>Посчитай срок</b> и запиши дату</span></li>
+          <li><span><b>Последний день</b> находишь по дате на письме</span></li>
+          <li><span><b>Ответ на <span lang="de">Bescheid</span></b> собираешь из пяти предложений</span></li>
         </ul>
+        <p class="ret-why">Одна тема закрыта. Всего на платформе <span class="n">340+</span> гайдов от A0 до C1, один платёж <span class="n">30 €</span>.</p>
         <a class="btn" href="#platform">Посмотреть платформу</a>
       </div>
     </div>
